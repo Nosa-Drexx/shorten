@@ -1,11 +1,9 @@
 <script setup lang="ts">
-
+import HeaderSection from './components/HeaderSection.vue'
 </script>
 
 <template>
-<div>hi</div>
+  <HeaderSection />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

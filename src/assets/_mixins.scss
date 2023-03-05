@@ -1,0 +1,13 @@
+@mixin flex($type: row nowrap, $justify: center, $align: center) {
+    display: flex;
+    flex-flow: $type;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin button($width, $height, $background: transparent) {
+    background: $background;
+    width: $width;
+    height: $height;
+    border: none;
+}
