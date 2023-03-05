@@ -11,3 +11,8 @@
     height: $height;
     border: none;
 }
+
+@mixin font( $weight: normal, $family: $fontPrimary) {
+    font-family: $family;
+    font-weight: $weight;
+}
