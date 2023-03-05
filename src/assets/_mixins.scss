@@ -16,3 +16,12 @@
     font-family: $family;
     font-weight: $weight;
 }
+
+@mixin borderShadow() {
+    box-shadow: 10px 30px 25px $shadowColor;
+}
+
+@mixin gradient() {
+    background: rgb(226,218,240);
+    background: linear-gradient(90deg, rgba(226,218,240,1) 76%, rgba(254,254,254,1) 91%);
+}

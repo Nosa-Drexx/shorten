@@ -51,11 +51,12 @@ export default defineComponent({
 .animated-btn {
   @include flex(column nowrap, space-between);
   @include button(50px, 45px);
+  cursor: pointer;
   position: relative;
   div {
     height: 18%;
     width: 100%;
-    background: black;
+    background: $thirdColor;
     transition: transform 0.5s, opacity 0.5s, margin 0.5s;
     position: absolute;
   }

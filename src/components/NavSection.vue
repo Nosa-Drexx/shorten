@@ -43,8 +43,10 @@ export default defineComponent({
   width: 100%;
   height: 0px;
   overflow: hidden;
+  position: absolute;
   z-index: 100;
   transition: height 1s;
+  background: $white;
   .ul {
     @include flex(column nowrap, space-between, flex-start);
     margin: 0;
