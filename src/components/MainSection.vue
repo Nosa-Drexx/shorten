@@ -3,7 +3,6 @@ import { defineComponent } from 'vue'
 import UrlListContainer from './UrlListContainer.vue'
 
 export default defineComponent({
-  data: () => ({}),
   components: { UrlListContainer }
 })
 </script>
@@ -50,7 +49,7 @@ export default defineComponent({
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
   .hero-section {
     .info-text {
       h1 {

@@ -44,7 +44,7 @@ export default defineComponent({
     display: none;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 600px) {
   .header {
     .animated-button-container {
       display: none;

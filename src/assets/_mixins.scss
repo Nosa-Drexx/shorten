@@ -10,6 +10,7 @@
     width: $width;
     height: $height;
     border: none;
+    cursor: pointer;
 }
 
 @mixin font( $weight: normal, $family: $fontPrimary) {
@@ -19,6 +20,10 @@
 
 @mixin borderShadow() {
     box-shadow: 10px 30px 25px $shadowColor;
+}
+
+@mixin borderShadow2() {
+    box-shadow: 3px 7px 15px $thirdColor;
 }
 
 @mixin gradient() {
