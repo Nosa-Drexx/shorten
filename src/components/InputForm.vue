@@ -66,6 +66,7 @@ export default defineComponent({
         v-model="url"
         @keyup.enter="submitURL"
         class="url-input"
+        placeholder="🔗 Paste a link to shorten it"
         required
       />
     </label>

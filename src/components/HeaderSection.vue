@@ -40,6 +40,9 @@ export default defineComponent({
   @include flex(row nowrap, space-between);
   color: $primaryColor;
   padding: 1rem;
+  position: sticky;
+  background: $white;
+  top: 0;
   .nav-bigger-screen {
     display: none;
   }

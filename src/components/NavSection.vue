@@ -43,7 +43,7 @@ export default defineComponent({
   width: 100%;
   height: 0px;
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   z-index: 100;
   transition: height 1s;
   background: $white;
