@@ -3,15 +3,18 @@ import { defineComponent } from 'vue'
 import AnimatedButton from './AnimatedButton.vue'
 import NavSection from './NavSection.vue'
 import NavSectionBiggerScreens from './NavSectionBiggerScreens.vue'
+import ShortenLogo from '@/assets/images/shorten.svg'
 
 type DataState = {
   showNav: boolean
+  ShortenLogo: string //Image buffer as string
 }
 
 export default defineComponent({
   components: { NavSection, AnimatedButton, NavSectionBiggerScreens },
   data: (): DataState => ({
-    showNav: false
+    showNav: false,
+    ShortenLogo: ShortenLogo
   }),
   methods: {
     showOrHideNav(event: boolean): void {
@@ -23,7 +26,9 @@ export default defineComponent({
 
 <template>
   <header class="header">
-    <div>Hello i am a header</div>
+    <div class="header-img">
+      <a href="#"><img :src="ShortenLogo" /></a>
+    </div>
     <div class="animated-button-container">
       <AnimatedButton @button-status="showOrHideNav" />
     </div>
@@ -43,6 +48,18 @@ export default defineComponent({
   position: sticky;
   background: $white;
   top: 0;
+  .header-img {
+    width: 30%;
+    a {
+      display: block;
+      width: 100%;
+      img {
+        width: 100%;
+        height: 50px;
+        object-fit: contain;
+      }
+    }
+  }
   .nav-bigger-screen {
     display: none;
   }
