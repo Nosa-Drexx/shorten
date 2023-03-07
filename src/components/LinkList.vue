@@ -56,7 +56,7 @@ export default defineComponent({
     <div class="link" v-for="links in shortenStore.LinkList" :key="links.id">
       <div class="link-full">{{ links.originalLink }}</div>
       <div class="link-short">
-        <a :href="links.fullShortLink">{{ links.shortLink }}</a>
+        <a :href="links.fullShortLink" target="_blank">{{ links.shortLink }}</a>
         <button ref="copyBtn" :data-copied="links.copied" :data-id="links.id" @click="copyLink">
           {{ !links.copied ? 'Copy' : 'Copied!' }}
         </button>
