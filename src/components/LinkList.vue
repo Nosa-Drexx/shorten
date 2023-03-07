@@ -34,7 +34,10 @@ export default defineComponent({
     const copyBtn = this.$refs.copyBtn as HTMLButtonElement[]
 
     setTimeout(() => {
-      List.style.height = '250px'
+      //increase length of links box
+      if (this.shortenStore.LinkList.length > 0) {
+        List.style.height = '250px'
+      }
       //Darken each button that has been copied
       if (copyBtn) {
         copyBtn.forEach((button) => {
