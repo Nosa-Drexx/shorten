@@ -1,6 +1,10 @@
 # shorten
 
-This template should help get you started developing with Vue 3 in Vite.
+A link shortner app built with Vue, Typescript and SCSS
+
+## Live Url
+
+https://shorten-woad.vercel.app/
 
 ## Recommended IDE Setup
 
